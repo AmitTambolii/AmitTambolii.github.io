@@ -28,7 +28,8 @@ jobs:
       - name: Extract website
         run: |
           mkdir -p dist/public
-          unzip -o portfolio-site.zip -d dist/public
+          unzip -o Mr-Amit-Tamboli-Snellenberg.zip "*/dist/public/*" -d extracted
+          cp -r extracted/Mr-Amit-Tamboli-Snellenberg/dist/public/. dist/public/
 
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v3

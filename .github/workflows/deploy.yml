@@ -1,4 +1,4 @@
-
+```yaml
 name: Deploy Resume Website
 
 on:
@@ -30,6 +30,7 @@ jobs:
           mkdir -p dist/public
           unzip -o Mr-Amit-Tamboli-Snellenberg.zip "*/dist/public/*" -d extracted
           cp -r extracted/Mr-Amit-Tamboli-Snellenberg/dist/public/. dist/public/
+          cp google91a91b9c28b72bf2.html dist/public/
 
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v3
@@ -39,3 +40,4 @@ jobs:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
+```

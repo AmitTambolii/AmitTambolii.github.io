@@ -33,6 +33,7 @@ jobs:
           cp -r extracted/Mr-Amit-Tamboli-Snellenberg/dist/public/. dist/public/
           cp google91a91b9c28b72bf2.html dist/public/
           cp sitemap.xml dist/public/
+          cp sitemap.txt dist/public/
 
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v3
